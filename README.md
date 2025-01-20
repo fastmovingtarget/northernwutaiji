@@ -31,3 +31,9 @@
 # Journal (starting on 20/01/2025)
 ## Day 1:
 ### Hour 1: Initialising, Planning and Writing Readme:
+App created using create-react-app, then some of it deleted and most of it changed. Did some wireframing on paper for each of the major landing pages, then moved onto initialising the router. Added test cases for App, Layout, Home and Router.
+
+### Hour 2: Creating Routes for the major landing pages, basic text and "video" blocking:
+Managed to get the routes working, putting together tests for the nav links in layout took more time than expected and the page blocking was very, *very* basic.
+
+### Hour 3: Sharpen up the Layout CSS and put in placeholder text and videos:
