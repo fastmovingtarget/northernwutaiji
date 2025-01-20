@@ -1,4 +1,6 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
+import taijutu from "../Images/Taijutu.png"
+import './Layout.css'
 
 
 function Layout() {
@@ -7,32 +9,36 @@ function Layout() {
 
     return (
         <div className="layout-main">
-            <header>
-                Northern Wu Taiji
+            <header className="header">
+                <img src={taijutu} alt="Taijutu representing Taijiquan"/>
+                <span>Northern Wu Taiji</span>
             </header>
             <nav id="navigation-bar" className="nav-bar">
                 <div id="navigation-list" className="nav-list" >
                     <div className={"nav-element" + (currentPage.includes("/Home") || currentPage === ("/") ? " active" : "")} onClick={() => navigate("/Home")}>
-                        <p>Home</p>
+                        <span>Home</span>
                     </div>
                     <div className={"nav-element" + (currentPage.includes("/Forms") ? " active" : "")} onClick={() => navigate("/Forms")}>
-                        <p>Form</p>
+                        <span>Forms</span>
                     </div>
                     <div className={"nav-element" + (currentPage.includes("/QiGong") ? " active" : "")} onClick={() => navigate("/QiGong")}>
-                        <p>QiGong</p>
+                        <span>QiGong</span>
                     </div>
                     <div className={"nav-element" + (currentPage.includes("/Applications") ? " active" : "")} onClick={() => navigate("/Applications")}>
-                        <p>Applications</p>
+                        <span>Applications</span>
                     </div>
                     <div className={"nav-element" + (currentPage.includes("/Foundations") ? " active" : "")} onClick={() => navigate("/Foundations")}>
-                        <p>Foundations</p>
+                        <span>Foundations</span>
                     </div>
                     <div className={"nav-element" + (currentPage.includes("/Information") ? " active" : "")} onClick={() => navigate("/Information")}>
-                        <p>About</p>
+                        <span>About</span>
                     </div>
                 </div>
             </nav>
-            <Outlet />
+            
+            <div className="content-container">
+                <Outlet />
+            </div>
         </div>
     )
 

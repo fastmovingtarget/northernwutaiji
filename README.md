@@ -37,3 +37,13 @@ App created using create-react-app, then some of it deleted and most of it chang
 Managed to get the routes working, putting together tests for the nav links in layout took more time than expected and the page blocking was very, *very* basic.
 
 ### Hour 3: Sharpen up the Layout CSS and put in placeholder text and videos:
+Spent a while faffing around with colours but layout at least is now looking sharper. Starting to add in placeholder videos and will be adding in placeholder text shortly.
+
+### Hour 4: Finish adding placeholders and get to putting the content in the correct place visually:
+Placeholders added and content is in and looking passable for the moment.
+
+## Day 1 end:
+Only 4 hours of concentrated dev time, but I'm happy with the progress so far.  There's not a huge amount to do as yet testing-wise, which will likely remain the case throughout the MVP at the very least.
+
+### Tomorrow:
+Look towards carousels where there should be carousels

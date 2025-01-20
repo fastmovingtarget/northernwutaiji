@@ -20,7 +20,7 @@ test('renders layout successfully', () => {
   
   const homeNavElement = screen.getByText(/Home/i);
   expect(homeNavElement).toBeInTheDocument();
-  const formNavElement = screen.getByText(/Form/i);
+  const formNavElement = screen.getByText(/Forms/i);
   expect(formNavElement).toBeInTheDocument();
   const qiGongNavElement = screen.getByText(/QiGong/i);
   expect(qiGongNavElement).toBeInTheDocument();
@@ -50,12 +50,12 @@ describe("Nav bar directs correctly", () => {
   
     const user = userEvent.setup();
   
-    const formNavElement = screen.getByText(/Form/i);
+    const formNavElement = screen.getByText(/Forms/i);
     expect(formNavElement).toBeInTheDocument();
   
     await user.click(formNavElement);
   
-    expect(mock__currentPage).toEqual("/Form")
+    expect(mock__currentPage).toEqual("/Forms")
   })
   test("Clicking 'QiGong' navigates to qigong page", async () => {
     render(<Layout />);
@@ -113,4 +113,6 @@ test("Renders Header and title", () => {
   const titleElement = screen.getByText("Northern Wu Taiji");
   expect(titleElement).toBeInTheDocument();
 
+  const imageElement = screen.getByAltText("Taijutu representing Taijiquan")
+  expect(imageElement).toBeInTheDocument();
 })
