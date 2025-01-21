@@ -47,3 +47,10 @@ Only 4 hours of concentrated dev time, but I'm happy with the progress so far.  
 
 ### Tomorrow:
 Look towards carousels where there should be carousels
+
+## Day 2:
+### Hour 1: Implement carousels on Applications, QiGong, Foundations pages:
+As I've not implemented these before I want to get the idea of what's going on first, then look at testing rather than the other way around.
+Had some teething issues using a library - react-multi-carousel. Turns out the container needs a defined width or no children get added...which was weird but oh well.
+
+### Hour 2: Carousels to QiGong and Foundations now, then start doing video editing:
