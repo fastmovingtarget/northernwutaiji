@@ -37,178 +37,143 @@ import appCloudHands from "./35-CloudHands.mp4"
 const vidList = [{
     title:"Open",
     text:"Description of Taiji Open Applications",
-    formLink:"/",
     video:appOpen
 }, {
     title:"Grasp Half Moon", 
     text:"Description",
-    formLink:"/",
     video:appCirclePush
 }, {
-    title:"Turn and seek grail", 
+    title:"Turn and Seek Grail", 
     text:"Description",
-    formLink:"/",
     video:appSimpleUpwardTurn
 }, {
     title:"Lan Que Wei", 
     text:"Description",
-    formLink:"/",
     video:appLCW
 }, {
     title:"Circle Back and Push", 
     text:"Description",
-    formLink:"/",
     video:appCircleBackAndPush
 }, {
     title:"Hold Whip", 
     text:"Description",
-    formLink:"/",
     video:appHorse
 },{
     title:"Monkey on the Tree", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appMonkey
 }, {
     title:"Hold Spear", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appBear
 }, {
     title:"Spin Lasoo", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appFlickWristUp
 }, {
     title:"Close Feet, Turn Wrist", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appCircleArmsDownThenUp
 }, {
     title:"Close hands and feet", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appTurnWithArmsVertical
 }, {
     title:"Brush Coat from leg: 1", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appFlurbleReady
 }, {
     title:"Brush Coat from leg: 2", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appFlurblePush
 }, {
     title:"Play Harp", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appPlayHarp
 }, {
     title:"Pick up stone and plug hole in the sky", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appCircleDownWithHarp
 }, {
     title:"Walk in, stir cauldron: Part 1", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appPunchHand
 }, {
     title:"Walk in, stir cauldron: Part 2", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appStirCauldron
 }, {
     title:"Sit down on horse, hold a sword", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appFacepalmOfDOOM
 }, {
     title:"Stab with Sword", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appDeflectAndPunch
 }, {
     title:"Stupid Man Moves Mountain", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appRightLeftRightMiddle,
 }, {
     title:"Golden Dragon Turns its Tail", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appDownUpDown
 }, {
     title:"Sit on Stone", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appKnuckleToKnee
 }, {
     title:"Cross Hands", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:app90Degrees
 }, {
     title:"Hold tiger's head, throw back into forest", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appHoldTiger
 }, {
     title:"Turn Arm", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appTurnArm
 }, {
     title:"Jump onto Horse", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appSwingTurnIn
 }, {
     title:"Push and Step back", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appPushAndStepBack
 }, {
     title:"Paint Yin and Yang", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appYinAndYang
 }, {
     title:"Go back, trap monkey", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appLowerBody
 }, {
     title:"Find needle on the sea floor", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appTakeOffJacket
 }, {
     title:"Draw Bow: 1", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appDrawBow
 }, {
     title:"Draw Bow: 2", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appStepBack,
 }, {
     title:"Throw Hammer", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appFistPump
 }, {
     title:"Throw Basketball", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appBasketball
 
 }, {
     title:"Cloud Hands", 
-    text:"Description",
-    formLink:"/",
+    text:"Description", 
     video:appCloudHands
 }]
 

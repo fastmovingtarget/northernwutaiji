@@ -1,9 +1,23 @@
 import React from "react";
+import { useRef, useEffect } from "react";
+import {Link, useSearchParams} from "react-router-dom"
 import Carousel from "react-multi-carousel";
 import "./Applications.css"
 import formAppData from "../Videos/ApplicationVideos/VideoImports";
 
 export default function Applications(){
+    const carouselRef = useRef(null)
+    const [searchParams] = useSearchParams();
+
+    
+    useEffect(() => {
+        if (carouselRef && carouselRef.current) {
+            const formTitle = searchParams.get("title");  
+            const slideIndex = formAppData.findIndex((data) => data.title.includes(formTitle))
+            carouselRef.current.goToSlide(slideIndex >= 0 ? slideIndex : 0); 
+        }
+    }, [])
+
     const responsive = {
           everything: {
             breakpoint: { max: 4000, min: 0 },
@@ -11,17 +25,20 @@ export default function Applications(){
           }
     }
 
+
     const elementsArr = formAppData;
 
     return (
         <div className="applications">
             <h2>Applications</h2>
-            <Carousel swipeable={false}
+            <Carousel 
+                        ref={carouselRef}
+                        swipeable={false}
                         draggable={false}
                         showDots={false}
                         responsive={responsive}
                         ssr={true} // means to render carousel on server-side.
-                        infinite={true}
+                        infinite={false}
                         autoPlay={false}
                         autoPlaySpeed={1000}
                         keyBoardControl={true}
@@ -42,7 +59,7 @@ export default function Applications(){
                                 <p>{element.text}</p>
                             </div>
                             <div>
-                                <p>{element.link}</p>
+                                <Link to={"/Forms?title="+ element.title}>{"Form: " + element.title}</Link>
                             </div>
                         </div>
                     )

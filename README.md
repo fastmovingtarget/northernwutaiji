@@ -53,4 +53,14 @@ Look towards carousels where there should be carousels
 As I've not implemented these before I want to get the idea of what's going on first, then look at testing rather than the other way around.
 Had some teething issues using a library - react-multi-carousel. Turns out the container needs a defined width or no children get added...which was weird but oh well.
 
-### Hour 2: Carousels to QiGong and Foundations now, then start doing video editing:
+### Hour 2: Carousels to QiGong and Foundations now, then start doing video editing.
+
+### Hour 3: Building an array for Form Applications based on title, description, links to form page
+
+### Hour 4: Building an array for Forms that link to and from Form Applications, setting correct carousel location with query parameters
+
+## Day 2 end:
+This is really emphasising how important it is to have data prepared for this kind of chiefly-informative website. And more to the point, how little work is needed outside of that data population.
+
+### Tomorrow:
+MVP and MS1 basically implemented at this point, barring information breakdowns. Next step is User/token based authentication and algorithm based levelling up.
