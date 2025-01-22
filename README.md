@@ -63,4 +63,11 @@ Had some teething issues using a library - react-multi-carousel. Turns out the c
 This is really emphasising how important it is to have data prepared for this kind of chiefly-informative website. And more to the point, how little work is needed outside of that data population.
 
 ### Tomorrow:
-MVP and MS1 basically implemented at this point, barring information breakdowns. Next step is User/token based authentication and algorithm based levelling up.
+MVP and MS1 basically implemented at this point, barring information and video breakdowns. Next step is User/token based authentication and algorithm based levelling up.
+
+## Day 3 start:
+## Hour 1: Implementing a user data context to track currently active tasks and progress
+
+## Hour 2: In forms video, add in timestamps for each carousel item, then set video time to correspond to where the current carousel element is
+
+## Hour 3: On Forms page, set a button for the user to self-assess that they're comfortable with a step of the form, then link that to form progress. Add a form progress bar to the home page

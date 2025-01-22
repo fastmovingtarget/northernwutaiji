@@ -1,3 +1,4 @@
+import ActivityProvider from './ActivityContext/ActivityContext';
 import './App.css';
 import Router from './Router'
 import "react-multi-carousel/lib/styles.css";
@@ -5,7 +6,9 @@ import "react-multi-carousel/lib/styles.css";
 function App() {
   return (
     <div className="App">
-      <Router />
+      <ActivityProvider>
+        <Router />
+      </ActivityProvider>
     </div>
   );
 }

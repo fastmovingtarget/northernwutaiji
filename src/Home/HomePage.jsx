@@ -1,12 +1,17 @@
 import { useNavigate } from "react-router";
+import { useActivity } from "../ActivityContext/ActivityContext";
 
 export default function HomePage(){
     const navigate = useNavigate();
+    const {formProgress} = useActivity();
+    const formProgressPercentage = Math.floor((formProgress.filter((e) => e).length / formProgress.length) * 100)
+    console.log(formProgress)
 
     const homeCards = [{
         title:"Forms Card",
         link:"/Forms",
-        text:"Go do some form!"
+        text:"Go do some form!",
+        otherComponents:(<label> Form Progress: {formProgressPercentage} % <br/> <progress value={formProgress.filter((e) => e).length} max={formProgress.length} /></label>)
     },{
         title:"Applications Card",
         link:"/Applications",
@@ -29,9 +34,10 @@ export default function HomePage(){
         <div>
             <h3>Home</h3>
             {homeCards.map((card, index) => (
-                <div className="home-card hoverable" key={"home-card-" + index}>
+                <div className="home-card hoverable" key={"home-card-" + index} onClick={() => navigate(card.link)}>
                     <h4>{card.title}</h4>
                     <p>{card.text}</p>    
+                    {card.otherComponents}
                 </div>
             ))}
         </div>
