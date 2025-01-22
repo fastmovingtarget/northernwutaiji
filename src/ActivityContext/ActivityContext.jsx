@@ -4,7 +4,7 @@ import { useContext, createContext, useState} from "react";
 const ActivityContext = createContext();
 
 const ActivityProvider = ({ children }) => {
-    
+
     const [currentActivity, setCurrentActivity] = useState(null);
     const [formProgress, setFormProgress] = useState(JSON.parse(localStorage.getItem("taijiFormProgress")) ?? new Array(30).fill(false));
     const [levelData, setLevelState] = useState(JSON.parse(localStorage.getItem("taijiLevel")) ?? 

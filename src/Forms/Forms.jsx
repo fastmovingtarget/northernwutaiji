@@ -1,10 +1,11 @@
-//import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
+import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
 import { useEffect, useRef } from "react";
 import { useSearchParams } from "react-router"
 import formMovements from "./FormMovements";
 import {useActivity} from "../ActivityContext/ActivityContext";
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router";
+import "./Forms.css"
 
 export default function Forms(){
     const [searchParams] = useSearchParams();
@@ -45,7 +46,7 @@ export default function Forms(){
     return (
         <div>
             <h1>Forms</h1>
-            {/*<video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef} />*/}
+            <video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef} />
             <Carousel swipeable={false}
                         draggable={false}
                         showDots={false}
@@ -72,13 +73,13 @@ export default function Forms(){
                 {
                     formMovements.map((element, index) => {
                         return (
-                            <div key={"application-element-" + index}>
-                                <div>
+                            <div key={"application-element-" + index} className="form-element">
+                                <div className="form-text-container">
                                     <p>{element.title}</p>
                                     <p>{element.text}</p>
-                                    <button onClick={() => {toggleFormProgressItem(index)}}>{!formProgress[index] ? "I'm now comfortable with this movement" : "I want to practice this more"}</button>
                                 </div>
-                                <div>
+                                <div className="form-interactables-container">
+                                    <button className={"form-done toggle state-" + formProgress[index]} onClick={() => {toggleFormProgressItem(index)}}>{!formProgress[index] ? "I'm now comfortable with this movement" : "I want to practice this more"}</button>
                                     <Link to={"/Applications?title=" + element.title}>{"Application: " + element.title}</Link>
                                 </div>
                             </div>

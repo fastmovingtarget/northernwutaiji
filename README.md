@@ -75,3 +75,6 @@ On reflection, I feel like user authentication is pointless to implement in this
 
 ### Hour 4: Create a level tracker card on the home page, build an algorithm to allow level-ups and improve stats within level using different pages.
 Success mostly, using react-chartjs-2 library now have a radar chart showing stats! Which can be altered when the user learns a step of the form! How else should I improve level? I don't know!
+
+## Day 3 end:
+Today went pretty well, I felt like I got a lot done. Now to expand the scope a little and after that I can work on my pet foot project
