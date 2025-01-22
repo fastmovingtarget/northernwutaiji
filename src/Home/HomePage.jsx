@@ -1,18 +1,18 @@
 import { useNavigate } from "react-router";
 import { useActivity } from "../ActivityContext/ActivityContext";
+import LevelTracker from "./LevelTracker";
 
 export default function HomePage(){
     const navigate = useNavigate();
     const {formProgress} = useActivity();
     const formProgressPercentage = Math.floor((formProgress.filter((e) => e).length / formProgress.length) * 100)
-    console.log(formProgress)
 
     const homeCards = [
     {
         title:"Forms",
         link:"/Forms",
         text:"Practicing form increases your strength, flexibility and technique, as well as improving your relaxation",
-        otherComponents:(<label> Form Progress: {formProgressPercentage} % <br/> <progress value={formProgress.filter((e) => e).length} max={formProgress.length} /></label>)
+        otherComponents:(<label> Form Learning Progress: {formProgressPercentage} % <br/> <progress value={formProgress.filter((e) => e).length} max={formProgress.length} /></label>)
     },{
         title:"Applications",
         link:"/Applications",
@@ -34,6 +34,7 @@ export default function HomePage(){
     return (
         <div>
             <h3>Home</h3>
+            <LevelTracker />
             {homeCards.map((card, index) => (
                 <div className="home-card hoverable" key={"home-card-" + index} onClick={() => navigate(card.link)}>
                     <h4>{card.title}</h4>

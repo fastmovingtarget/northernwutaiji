@@ -53,7 +53,7 @@ export default function Applications(){
                 {elementsArr.map((element, index) => {
                     return (
                         <div key={"application-element-" + index}>
-                            <video className="forms video" src={element.video} alt={"Applications Video " + element.title}  muted loop height="300px"/>
+                            {/*<video className="forms video" src={element.video} alt={"Applications Video " + element.title}  muted loop height="300px"/>*/}
                             <div>
                                 <p>{element.title}</p>
                                 <p>{element.text}</p>

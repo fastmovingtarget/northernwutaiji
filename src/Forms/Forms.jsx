@@ -1,4 +1,4 @@
-import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
+//import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
 import { useEffect, useRef } from "react";
 import { useSearchParams } from "react-router"
 import formMovements from "./FormMovements";
@@ -10,7 +10,7 @@ export default function Forms(){
     const [searchParams] = useSearchParams();
     const carouselRef = useRef(null);
     const videoRef = useRef(null);
-    const {formProgress, setFormProgress} = useActivity();
+    const {formProgress, setFormProgress, setLevelData} = useActivity();
 
     useEffect(() => {
         if(carouselRef){
@@ -31,6 +31,13 @@ export default function Forms(){
         let newFormArray = [...formProgress];
         newFormArray[index] = !newFormArray[index];
 
+        setLevelData({
+            Strength:newFormArray[index] ? 1 : -1,
+            Flexibility:newFormArray[index] ? 1 : -1,
+            Relaxation:newFormArray[index] ? 1 : -1,
+            Technique:newFormArray[index] ? 1 : -1
+        })
+
         localStorage.setItem("taijiFormProgress", JSON.stringify(newFormArray))
         setFormProgress(newFormArray);
     }
@@ -38,7 +45,7 @@ export default function Forms(){
     return (
         <div>
             <h1>Forms</h1>
-            <video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef}/>
+            {/*<video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef} />*/}
             <Carousel swipeable={false}
                         draggable={false}
                         showDots={false}
@@ -57,7 +64,7 @@ export default function Forms(){
                         itemClass="carousel-item-padding-40-px"
                         ref={carouselRef}
                         beforeChange={(nextSlide, {currentSlide}) => {
-                            if(nextSlide >= 0){
+                            if(nextSlide >= 0 && videoRef.current){
                                 videoRef.current.currentTime = formMovements[nextSlide].timestamp
                             }
                         }}

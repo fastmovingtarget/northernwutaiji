@@ -74,3 +74,4 @@ On reflection, I feel like user authentication is pointless to implement in this
 ### Hour 3: On Forms page, set a button for the user to self-assess that they're comfortable with a step of the form, then link that to form progress. Add a form learning progress bar to the home page
 
 ### Hour 4: Create a level tracker card on the home page, build an algorithm to allow level-ups and improve stats within level using different pages.
+Success mostly, using react-chartjs-2 library now have a radar chart showing stats! Which can be altered when the user learns a step of the form! How else should I improve level? I don't know!
