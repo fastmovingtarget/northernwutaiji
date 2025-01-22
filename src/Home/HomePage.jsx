@@ -7,27 +7,28 @@ export default function HomePage(){
     const formProgressPercentage = Math.floor((formProgress.filter((e) => e).length / formProgress.length) * 100)
     console.log(formProgress)
 
-    const homeCards = [{
-        title:"Forms Card",
+    const homeCards = [
+    {
+        title:"Forms",
         link:"/Forms",
-        text:"Go do some form!",
+        text:"Practicing form increases your strength, flexibility and technique, as well as improving your relaxation",
         otherComponents:(<label> Form Progress: {formProgressPercentage} % <br/> <progress value={formProgress.filter((e) => e).length} max={formProgress.length} /></label>)
     },{
-        title:"Applications Card",
+        title:"Applications",
         link:"/Applications",
-        text:"Go beat up some consenting adults!"
+        text:"Performing applications greatly increases your strength and technique"
     },{
-        title:"QiGong Card",
+        title:"QiGong",
         link:"/QiGong",
-        text:"Go meditate...at some consenting adults!"
+        text:"QiGong increases flexibility and relaxation"
     },{
-        title:"Foundations Card",
+        title:"Foundations",
         link:"/Foundations",
-        text:"Go exercise with some consenting adults!"
+        text:"Improving your Kung-Fu Foundations increases youe strength, endurance and technique"
     },{
-        title:"Information Card",
+        title:"Information",
         link:"/Information",
-        text:"Go learn about some consenting adults!"
+        text:"Learning about Taiji won't increase any stats or help any levels, but you might find something interesting to motivate you going forwards."
     }]
 
     return (

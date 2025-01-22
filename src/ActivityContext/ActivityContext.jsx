@@ -6,10 +6,10 @@ const ActivityContext = createContext();
 const ActivityProvider = ({ children }) => {
 
     const [currentActivity, setCurrentActivity] = useState(null);
-    const [formProgress, setFormProgress] = useState(new Array(30).fill(false));
+    const [formProgress, setFormProgress] = useState(JSON.parse(localStorage.getItem("taijiFormProgress")) ?? new Array(30).fill(false));
     const [levelData, setLevelData] = useState(null)
 
-
+    
 
     return (
         <ActivityContext.Provider value={{currentActivity, setCurrentActivity, formProgress, setFormProgress, levelData, setLevelData}}>

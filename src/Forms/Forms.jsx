@@ -12,8 +12,6 @@ export default function Forms(){
     const videoRef = useRef(null);
     const {formProgress, setFormProgress} = useActivity();
 
-    console.log(formProgress)
-
     useEffect(() => {
         if(carouselRef){
             const formTitle = searchParams.get("title");  
@@ -30,9 +28,10 @@ export default function Forms(){
     }
 
     const toggleFormProgressItem = (index) => {
-        console.log(index)
         let newFormArray = [...formProgress];
         newFormArray[index] = !newFormArray[index];
+
+        localStorage.setItem("taijiFormProgress", JSON.stringify(newFormArray))
         setFormProgress(newFormArray);
     }
 
@@ -57,9 +56,9 @@ export default function Forms(){
                         dotListClass="custom-dot-list-style"
                         itemClass="carousel-item-padding-40-px"
                         ref={carouselRef}
-                        afterChange={(prevSlide, {currentSlide}) => {
-                            if(currentSlide >= 0){
-                                videoRef.current.currentTime = formMovements[currentSlide].timestamp
+                        beforeChange={(nextSlide, {currentSlide}) => {
+                            if(nextSlide >= 0){
+                                videoRef.current.currentTime = formMovements[nextSlide].timestamp
                             }
                         }}
                     >

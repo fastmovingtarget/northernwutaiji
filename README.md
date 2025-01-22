@@ -66,8 +66,11 @@ This is really emphasising how important it is to have data prepared for this ki
 MVP and MS1 basically implemented at this point, barring information and video breakdowns. Next step is User/token based authentication and algorithm based levelling up.
 
 ## Day 3 start:
-## Hour 1: Implementing a user data context to track currently active tasks and progress
+### Hour 1: Implementing a user data context to track currently active tasks and progress
+On reflection, I feel like user authentication is pointless to implement in this scope. Storing data with an API is simply impractical for such a small project. The same applies for booking forms, it's not practical unless I'm actually willing to get booked!
 
-## Hour 2: In forms video, add in timestamps for each carousel item, then set video time to correspond to where the current carousel element is
+### Hour 2: In forms video, add in timestamps for each carousel item, then set video time to correspond to where the current carousel element is
 
-## Hour 3: On Forms page, set a button for the user to self-assess that they're comfortable with a step of the form, then link that to form progress. Add a form progress bar to the home page
+### Hour 3: On Forms page, set a button for the user to self-assess that they're comfortable with a step of the form, then link that to form progress. Add a form learning progress bar to the home page
+
+### Hour 4: Create a level tracker card on the home page, build an algorithm to allow level-ups and improve stats within level using different pages.
