@@ -77,4 +77,9 @@ On reflection, I feel like user authentication is pointless to implement in this
 Success mostly, using react-chartjs-2 library now have a radar chart showing stats! Which can be altered when the user learns a step of the form! How else should I improve level? I don't know!
 
 ## Day 3 end:
-Today went pretty well, I felt like I got a lot done. Now to expand the scope a little and after that I can work on my pet foot project
+Today went pretty well, I felt like I got a lot done. Now to expand the scope of the levelling a little and after that I can work on my pet foot project
+
+## Day 4 Start:
+I'm just realising how that last bit sounded...anyway!
+
+### Hour 1: 

@@ -1,4 +1,4 @@
-import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
+//import formVid from "../Videos/Wu Style Taiji Quan Form.mp4"
 import { useEffect, useRef } from "react";
 import { useSearchParams } from "react-router"
 import formMovements from "./FormMovements";
@@ -22,7 +22,7 @@ export default function Forms(){
     }, [])
 
     const responsive = {
-        everything: {
+        everything: {//I don't want more than one item appearing on the carousel
             breakpoint: { max: 4000, min: 0 },
             items: 1
         }
@@ -46,7 +46,7 @@ export default function Forms(){
     return (
         <div>
             <h1>Forms</h1>
-            <video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef} />
+            {/* <video className="forms video" src={formVid} alt="Forms Video"  muted loop height="300px" ref={videoRef} /> */}
             <Carousel swipeable={false}
                         draggable={false}
                         showDots={false}
