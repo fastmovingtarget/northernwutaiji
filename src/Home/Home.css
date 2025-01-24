@@ -1,0 +1,43 @@
+.home-page-container{
+    --bg-colour-dark:#21222A;
+    --bg-colour-mid:#383947;
+    --bg-colour-light:#4E5064;
+}
+
+.level-tracker-container{
+    height:auto;
+    width:100%;
+    .chartjs-container{
+        max-height:400px;
+        width:auto;
+        display:flex;
+        justify-content: center;
+    }
+}
+label.progress-bar{
+    position:sticky;
+    top:5vh;
+    background-color: var(--bg-colour-mid);
+    z-index: 3;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.card-nav-link{
+    display:flex;
+    justify-content: end;
+    p{
+        padding:calc(5px + 1vmin);
+        margin:calc(5px + 1vmin);
+        transition:background-color 0.2s linear;
+        border-radius:5px;
+        &:hover{
+            background-color: var(--bg-colour-mid);
+            cursor:pointer;
+        }
+        width:fit-content;
+    }
+}

@@ -82,4 +82,19 @@ Today went pretty well, I felt like I got a lot done. Now to expand the scope of
 ## Day 4 Start:
 I'm just realising how that last bit sounded...anyway!
 
-### Hour 1: 
+### Hour 1: Broadening the scope of how the user can register their practice, storing the last date practiced in Local Storage
+
+### Hour 2: Adding in buttons to the main page to allow the user to say if they've practiced or not
+
+### Hour 3: Added in a level bar, level breakpoints and each time a user says they've practiced adds +100 xp...out of max 2m, so good luck to them getting to lvl99
+
+### Hour 4: Working on styles and reactivity of level bar
+Success, thought it may be a little silly on the reactivity, it works and I'm happy with it!
+
+## Day 4 end:
+Honestly surprised how well today went, despite me not really having a plan at the start I was able to find improvements to make and I feel like the site is starting to come together.
+
+### Tomorrow: Finishing up the product up to MS2, deployment
+
+## Day 5 start:
+### Hour 5: Adding in a dummy booking form, looking at how the email servers common in this kind of sites work.

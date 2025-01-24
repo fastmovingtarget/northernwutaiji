@@ -17,7 +17,10 @@ export default function Forms(){
         if(carouselRef){
             const formTitle = searchParams.get("title");  
             const slideIndex = formMovements.findIndex((data) => data.title.includes(formTitle))
-            carouselRef?.current?.goToSlide(slideIndex >= 0 ? slideIndex : formProgress.findIndex((e) => !e))// if there's a link with a query string, go to that carousel item. If not, go to the first un-progressed form movement
+            const defaultLocation = formProgress.findIndex((e) => !e) 
+            carouselRef?.current?.goToSlide(slideIndex >= 0 ? 
+                slideIndex : 
+                defaultLocation >= 0 ? defaultLocation : 0)// if there's a link with a query string, go to that carousel item. If not, go to the first un-progressed form movement. If there's no un-progressed form movement, default to 0
         }
     }, [])
 
@@ -36,7 +39,8 @@ export default function Forms(){
             Strength:newFormArray[index] ? 1 : -1,
             Flexibility:newFormArray[index] ? 1 : -1,
             Relaxation:newFormArray[index] ? 1 : -1,
-            Technique:newFormArray[index] ? 1 : -1
+            Technique:newFormArray[index] ? 1 : -1,
+            Experience:newFormArray[index] ? 100 : -100
         })
 
         localStorage.setItem("taijiFormProgress", JSON.stringify(newFormArray))
@@ -73,14 +77,14 @@ export default function Forms(){
                 {
                     formMovements.map((element, index) => {
                         return (
-                            <div key={"application-element-" + index} className="form-element">
+                            <div key={"application-element-" + index } className="form-element hoverable">
                                 <div className="form-text-container">
                                     <p>{element.title}</p>
                                     <p>{element.text}</p>
                                 </div>
                                 <div className="form-interactables-container">
-                                    <button className={"form-done toggle state-" + formProgress[index]} onClick={() => {toggleFormProgressItem(index)}}>{!formProgress[index] ? "I'm now comfortable with this movement" : "I want to practice this more"}</button>
-                                    <Link to={"/Applications?title=" + element.title}>{"Application: " + element.title}</Link>
+                                    <button className={"form-done practiced-button toggle state-" + formProgress[index]} onClick={() => {toggleFormProgressItem(index)}}>{!formProgress[index] ? "I'm now comfortable with this movement" : "I want to practice this more"}</button>
+                                    <Link to={"/Applications?title=" + element.title}>{"Application: " + element.title + " \u2192"}</Link>
                                 </div>
                             </div>
                         )

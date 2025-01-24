@@ -7,6 +7,8 @@ const ActivityProvider = ({ children }) => {
 
     
     //localStorage.setItem("taijiPractice", null)
+    //localStorage.setItem("taijiLevel", null)
+    //localStorage.setItem("taijiFormProgress", null)
 
     const [currentActivity, setCurrentActivity] = useState(null);
     const [formProgress, setFormProgress] = useState(JSON.parse(localStorage.getItem("taijiFormProgress")) ?? new Array(30).fill(false));
@@ -16,7 +18,8 @@ const ActivityProvider = ({ children }) => {
             Flexibility:10,
             Endurance:10,
             Technique:10,
-            Relaxation:10
+            Relaxation:10,
+            Experience:0
         }
     )
 
@@ -33,7 +36,7 @@ const ActivityProvider = ({ children }) => {
             },
             QiGong:{
                 practiceDate:null
-            }
+            },
         }
     );
 
@@ -49,33 +52,36 @@ const ActivityProvider = ({ children }) => {
                     Strength:1,
                     Flexibility:1,
                     Relaxation:1,
-                    Technique:1
+                    Technique:1,
+                    Experience:100
                 });
                 break;
             case "Applications":
                 setLevelData({
                     Strength:3,
-                    Technique:3
+                    Technique:3,
+                    Experience:100
                 });
                 break;
             case "QiGong":
                 setLevelData({
                     Relaxation:2,
-                    Flexibility:2
+                    Flexibility:2,
+                    Experience:100
                 });
                 break;
             case "Foundations":
                 setLevelData({
                     Strength:2,
                     Endurance:3,
-                    Technique:1
+                    Technique:1,
+                    Experience:100
                 })
                 break;
             default:
                 break;
 
         }
-
     }
 
     const setLevelData = (inputStats) => {

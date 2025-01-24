@@ -1,0 +1,16 @@
+form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    >*{
+        margin:10px;
+        input{
+            font-size:calc(100%);
+            margin:5px;
+        }
+    }
+    .information-label{
+        display:flex;
+        flex-direction: column;
+    }
+}

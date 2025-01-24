@@ -24,14 +24,12 @@ export default function LevelTracker() {
 
     const {levelData} = useActivity()
 
-    console.log({levelData})
-
     const levelDataSet = {
-        labels: Object.keys(levelData),
+        labels: Object.keys(levelData).slice(0, 5),
         datasets: [
           {
             label: 'Current Statistics',
-            data: Object.values(levelData),
+            data: Object.values(levelData).slice(0, 5),
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 1,
@@ -49,12 +47,20 @@ export default function LevelTracker() {
                     backdropColor:"rgba(0,0,0,0"//set background opacity to 0
                 }
             }
+        },
+        plugins:{
+          legend:{
+            display:false,
+            position:"bottom"
         }
+      }
     }
 
-
     return (
-    <div>
-        <Radar data={levelDataSet} options={{scales:{r:{suggestedMin:0, suggestedMax:100, ticks:{callback:() => "", backdropColor:"rgba(0,0,0,0"}}}}}/>
-    </div>)
+      <div className="level-tracker-container column center">
+          <div className="chartjs-container">
+            <Radar data={levelDataSet} options={graphOptions}/>
+          </div>
+      </div>
+    )
 }
