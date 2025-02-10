@@ -22,7 +22,7 @@ export default function Forms(){
                 slideIndex : 
                 defaultLocation >= 0 ? defaultLocation : 0)// if there's a link with a query string, go to that carousel item. If not, go to the first un-progressed form movement. If there's no un-progressed form movement, default to 0
         }
-    }, [])
+    }, [formProgress, searchParams])
 
     const responsive = {
         everything: {//I don't want more than one item appearing on the carousel
@@ -80,7 +80,7 @@ export default function Forms(){
                             <div key={"application-element-" + index } className="form-element hoverable">
                                 <div className="form-text-container">
                                     <p>{element.title}</p>
-                                    <p>{element.text}</p>
+                                    {element.text.map(textElement => <p>{textElement}</p>)}
                                 </div>
                                 <div className="form-interactables-container">
                                     <button className={"form-done practiced-button toggle state-" + formProgress[index]} onClick={() => {toggleFormProgressItem(index)}}>{!formProgress[index] ? "I'm now comfortable with this movement" : "I want to practice this more"}</button>

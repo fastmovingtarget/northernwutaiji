@@ -1,5 +1,10 @@
 # Welcome to fastmovingtarget's Tai-Chi website readme!
 
+# Disclaimer! This React website is not currently complete and is not deployed 
+- If you want demonstrations, please view WebsiteProgressDay4.mp4 for current progress
+- Also a terminology quirk - within this site I'll be using "Form(s)" and "Application(s)" in their Tai-Chi meaning (Tai-Chi was there first by a few hundred years).
+    I'll try to use context clues like "booking form" etc for HTML forms for example.
+
 # The Problem:
 - I studied Northern Wu Taiji for a long time but never found a truly useful tutorail/information/booking website.
 - So I'm gonna make one.
