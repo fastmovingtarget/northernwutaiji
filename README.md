@@ -1,6 +1,6 @@
 # Welcome to fastmovingtarget's Tai-Chi website readme!
 
-# Disclaimer! This React website is not currently complete and is not deployed 
+# Disclaimer! The site is deployed in its current state, but is currently lacking illustrative video and image content
 - If you want demonstrations, please view WebsiteProgressDay4.mp4 for current progress
 - Also a terminology quirk - within this site I'll be using "Form(s)" and "Application(s)" in their Tai-Chi meaning (Tai-Chi was there first by a few hundred years).
     I'll try to use context clues like "booking form" etc for HTML forms for example.
@@ -32,6 +32,10 @@
 ## Development and testing
 - Not going out of my way to learn any new technology, just want to assess speed and capabilities.
 - Prioritise Test Driven Development.
+
+## Video, Image and Text Information content (written post-production)
+- While I'm in possession of illustrative videos and images for the forms and applications of Northern Wu Taiji, I concluded that I can't justify using them as they involve people who I'm no longer in contact with to ask permission
+- Text content is all generated out of my head, but there's a mountain of information to describe all these things (and the descriptions would need to be granular, because no videos!) and I simply can't justify the time to write it all out at present
 
 # Journal (starting on 20/01/2025)
 ## Day 1:

@@ -1,4 +1,3 @@
-import placeholderVid from "../Videos/MisacHover.mp4";
 import Carousel from "react-multi-carousel";
 
 export default function Foundations(){
@@ -11,32 +10,32 @@ export default function Foundations(){
     
     const elementsArr = [{
         title:"Test 1",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 2",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 3",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 4",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 5",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 6",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     }];

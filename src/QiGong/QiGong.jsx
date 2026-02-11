@@ -1,4 +1,3 @@
-import placeholderVid from "../Videos/MisacHover.mp4";
 import Carousel from "react-multi-carousel";
 
 export default function QiGong(){
@@ -12,32 +11,32 @@ export default function QiGong(){
     
     const elementsArr = [{
         title:"Test 1",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 2",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 3",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 4",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 5",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     },{
         title:"Test 6",
-        video:placeholderVid,
+        //video:placeholderVid,
         text:"Lorem Ipsum blah blah blah",
         link:"/applicationLink"
     }];
@@ -65,7 +64,7 @@ export default function QiGong(){
             {elementsArr.map((element, index) => {
                 return (
                     <div key={"application-element-" + index}>
-                        <video className="qigong video" src={element.video} alt={"QiGong Video " + element.title}  muted loop height="300px"/>
+                        {/*<video className="qigong video" src={element.video} alt={"QiGong Video " + element.title}  muted loop height="300px"/>*/}
                         <div>
                             <p>{element.title}</p>
                             <p>{element.text}</p>
