@@ -16,7 +16,7 @@ export default function Applications(){
             const slideIndex = formAppData.findIndex((data) => data.title.includes(formTitle))
             carouselRef.current.goToSlide(slideIndex >= 0 ? slideIndex : 0); 
         }
-    }, [])
+    })
 
     const responsive = {
           everything: {
