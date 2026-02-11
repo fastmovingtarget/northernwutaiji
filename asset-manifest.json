@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/northernwutaiji/static/css/main.71e51f2f.css",
+    "main.js": "/northernwutaiji/static/js/main.47e89277.js",
+    "static/js/488.2eb50046.chunk.js": "/northernwutaiji/static/js/488.2eb50046.chunk.js",
+    "static/media/Taijutu.png": "/northernwutaiji/static/media/Taijutu.6b1ba6490ef218479f9c.png",
+    "static/media/revicons.eot": "/northernwutaiji/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/northernwutaiji/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/northernwutaiji/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/northernwutaiji/index.html",
+    "main.71e51f2f.css.map": "/northernwutaiji/static/css/main.71e51f2f.css.map",
+    "main.47e89277.js.map": "/northernwutaiji/static/js/main.47e89277.js.map",
+    "488.2eb50046.chunk.js.map": "/northernwutaiji/static/js/488.2eb50046.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71e51f2f.css",
+    "static/js/main.47e89277.js"
+  ]
+}
